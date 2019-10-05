@@ -15,6 +15,7 @@ Item::Item(	string vName,
 			float vArmorValue,
 			float vHealth) : mWeight(vWeight), mArmorValue(vArmorValue), mDamage(vDamage), mHealth(vHealth), mName(vName) //Init with user defaults
 {
+	cout << "Debug:Item " << ToString() << " created" << endl;
 }
 
 
