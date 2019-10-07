@@ -33,6 +33,19 @@ void TestItemHeapWithDefaults()
 }
 
 
+Item TestMyItem() {
+	Item	tMyItem("Axe",10.0,11.0,0.0);
+
+	return	tMyItem;
+}
+
+Item* TestMyItem1() {
+	Item	tMyItem("Axe", 10.0, 11.0, 0.0);
+
+	return	&tMyItem;
+}
+
+
 int main()
 {
 //	TestItemLocal();
@@ -41,9 +54,12 @@ int main()
 //	Item* tMyItem = TestItemHeapAndReturn(); //NB this is a different scope and hence totally differn variable from the one in TestItemHeapAndReturn()
 //	cout << "Showing MyItem " << tMyItem->ToString() << endl;
 
-	TestItemHeapWithDefaults();
+//	TestItemHeapWithDefaults();
 
+//	auto tItem = TestMyItem();
 
+//	auto tItem1 = TestMyItem1();
+//	cout<< tItem1->GetName() << endl;
 
 //	delete tMyItem; //Delete
 
