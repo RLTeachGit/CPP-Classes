@@ -22,45 +22,30 @@ void TestItemHeap()
 Item* TestItemHeapAndReturn()
 {
 	Item*	tMyItem = new Item(); //Will be stored on Heap using a pointer
-	return	tMyItem;
+	return	tMyItem;	//Calling function now responsible for deleting the item
 }
 
 
 void TestItemHeapWithDefaults()
 {
-	Item*	tMyItem = new Item("Magic Shield", 2.0f,0.5f,100.0f); //Init with defaults
-	delete tMyItem;
+	Item*	tMyItem = new Item("Magic Shield", 2.0f,0.5f,100.0f); //Init with defaults, stored on heap
+
+	//Notmally do stuff with item
+
+	delete tMyItem;	//Delete item to tidy up
 }
 
 
 Item TestMyItem() {
 	Item	tMyItem("Axe",10.0,11.0,0.0);
 
-	return	tMyItem;
+	return	tMyItem; //This is OK, as item will be copied if assigned on function return
 }
 
 Item* TestMyItem1() {
 	Item	tMyItem("Axe", 10.0, 11.0, 0.0);
 
-	return	&tMyItem;
+	return	&tMyItem; //No, No, No here we return a pointer to an item stored on a stackframe which will go away
 }
 
 
-int main()
-{
-//	TestItemLocal();
-//	TestItemHeap();
-
-//	Item* tMyItem = TestItemHeapAndReturn(); //NB this is a different scope and hence totally differn variable from the one in TestItemHeapAndReturn()
-//	cout << "Showing MyItem " << tMyItem->ToString() << endl;
-
-//	TestItemHeapWithDefaults();
-
-//	auto tItem = TestMyItem();
-
-//	auto tItem1 = TestMyItem1();
-//	cout<< tItem1->GetName() << endl;
-
-//	delete tMyItem; //Delete
-
-}

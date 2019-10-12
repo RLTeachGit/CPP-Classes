@@ -2,14 +2,16 @@
 #include "pch.h"
 
 
+
+//Declaration for Item Class
 class Item
 {
 public:
 	Item();
 	Item(	string vName, 
-			float vWeight,
-			float vDamage,
-			float vArmorValue,
+			float vWeight,		//How much this item weights in Kg
+			float vDamage,		//Damage this item does as a % of current item health
+			float vArmorValue,	//How much this item will protect as a % by reducing the damage
 			float vHealth = 1.0); //Note different order, if Health is not specfied it default to 1.0 ie 100%
 
 

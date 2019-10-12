@@ -151,10 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BubbleSort.cpp" />
+    <ClCompile Include="ContainerTest.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="ItemTest.cpp" />
     <ClCompile Include="pch.cpp">
