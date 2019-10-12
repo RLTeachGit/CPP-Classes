@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="ContainerTest.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>

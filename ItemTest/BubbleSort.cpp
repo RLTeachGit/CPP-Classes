@@ -1,4 +1,4 @@
-
+#include "pch.h"
 #include "BubbleSort.h"
 
 
@@ -36,14 +36,14 @@ vector<int> BubbleSortByValue(vector<int> vData) //Data is passed by Value, ie. 
 		{
 			if (vData[tI] > vData[tI + 1])
 			{
-				int tTempData = vData[tI + 1];
-				vData[tI + 1] = vData[tI];
-				vData[tI] = tTempData;
-				tSwap = true;
+				int tTempData = vData[tI + 1]; //We swap by using a tamp variable
+				vData[tI + 1] = vData[tI];	//As here we are overwriting it
+				vData[tI] = tTempData;	
+				tSwap = true;	//We have swpped so not yet done
 				tSwapCount++;
 			}
 		}
-	} while (tSwap);
+	} while (tSwap);	//If we have not made any swaps then we are done
 
 	return	vData;
 }

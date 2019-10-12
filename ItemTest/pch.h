@@ -6,6 +6,15 @@
 #include <sstream>
 #include <string>
 
+//Selection of containers
+#include <vector>  
+#include <list>
+#include <deque>
+#include <map>
+#include <algorithm>
+//all "live" in namespace std::
+
+
 using	namespace std;		//Lazy approach; So we don't need std:: in every file
 
 #endif //PCH_H

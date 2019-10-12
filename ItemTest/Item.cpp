@@ -35,9 +35,9 @@ float Item::GetHealth()
 }
 
 //Weight Getter
-float Item::GetHWeight()
+float Item::GetWeight()
 {
-	return mHealth;
+	return mWeight;
 }
 
 //Damage Getter

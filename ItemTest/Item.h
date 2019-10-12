@@ -18,7 +18,7 @@ public:
 	~Item();
 
 	float		GetHealth(); //Getter for Health
-	float		GetHWeight(); //Getter for Weight
+	float		GetWeight(); //Getter for Weight
 	float		GetDamage();	//Getter for Damage
 	float		GetArmorValue();	//Getter for Armor Value
 	string		GetName();	//Getter for Name
